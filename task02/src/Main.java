@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            LogManager.getLogManager().readConfiguration( // берем конфиг для догов
+            LogManager.getLogManager().readConfiguration( // берем конфиг для логов
                     Main.class.getResourceAsStream("./log.config"));
         } catch (IOException e) {  // печаль, беда...
             System.err.println("Could not setup logger configuration: " + e.toString());
