@@ -10,7 +10,8 @@ public class MyCalculator {
 
         while (expression.size() > 1) {  // должен остаться только один элемент в списке - ответ
             // System.out.println(expression);
-            log.fine(expression.toString());
+            log.fine(expression.toString());  // не совсем важный лог - но тут можно узнать,
+                                              // как проходят вычисления
             expression = Iterator(expression);
         }
         log.fine(expression.toString());

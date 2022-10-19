@@ -42,7 +42,7 @@ public class Main {
                     if (i>-1) {
                         nameFile = path.getFileName()
                                 .toString().substring(0, i);
-                    } else {
+                    } else {  // тут обрабатываем файлы, у которых отсутствует расширение
                         nameFile = path.getFileName()
                                 .toString();
                     }
